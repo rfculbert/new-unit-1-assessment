@@ -50,8 +50,25 @@ const pinkPrice = .55
 */
 
 // CODE HERE
+let fujiTotal = 0;
+let galaTotal = 0;
+let pinkTotal = 0;
 
-
+for (let i = 0; i < fujiAcres.length; i++){
+    fujiTotal += fujiAcres[i]
+}
+for (let i = 0; i < galaAcres.length; i++){
+    galaTotal += galaAcres[i]
+}
+for (let i = 0; i < pinkAcres.length; i++){
+    pinkTotal += pinkAcres[i]
+}
+// console.log(pinkTotal)
+// console.log(galaTotal)
+// console.log(fujiTotal)
+console.log("--question 1---")
+let totalAcres = pinkTotal + galaTotal + fujiTotal
+console.log(totalAcres)
 
 
 
@@ -68,7 +85,9 @@ const pinkPrice = .55
 */
 
 // CODE HERE
-
+console.log("--question 2--")
+let averageDailyAcres = (totalAcres / 7)
+console.log(averageDailyAcres)
 
 
 
@@ -106,8 +125,12 @@ let acresLeft = 174
 let days = 0
 
 // CODE HERE
-
-
+console.log("--question 3--")
+while (acresLeft > 0){
+    acresLeft -= averageDailyAcres
+    days++
+}
+console.log(days)
 
 // PROBLEM 4
 
@@ -132,14 +155,39 @@ let days = 0
     and use the push method to add new 
     values to the new arrays.
 */
-
+//   Each acre yields 6.5 tons of apples.
+//const fujiAcres = [2, 3, 3, 2, 2, 2, 1]
+// const galaAcres = [5, 2, 4, 3, 6, 2, 4]
+// const pinkAcres = [1, 5, 4, 2, 1, 5, 4]
 // CODE HERE
 
-// let fujiTons =
-// let galaTons =
-// let pinkTons =
+let fujiTons = fujiAcres.slice(0, fujiAcres.length)
+let galaTons = galaAcres.slice(0, galaAcres.length)
+let pinkTons = pinkAcres.slice(0, pinkAcres.length)
 
+// function totalTons(arr){
+//     let weight = 6.5;
+//     for (let i = 0; i < arr.length; i++){
+//         arr[i] * weight
+//     } return arr;
+// }
 
+// totalTons(fujiAcres)
+console.log("--question 4--")
+for (let i = 0; i < fujiTons.length; i++){
+    fujiTons[i] = fujiTons[i] * 6.5
+}
+console.log(galaTons)
+
+for (let i = 0; i < galaTons.length; i++){
+    galaTons[i] = galaTons[i] * 6.5
+}
+console.log(galaTons)
+
+for (let i = 0; i < pinkTons.length; i++){
+    pinkTons[i] = pinkTons[i] * 6.5
+}
+console.log(pinkTons)
 
 
 
@@ -161,14 +209,53 @@ let days = 0
 */
 
 // CODE HERE 
+console.log("--question 5---")
 
-// let fujiPounds =
-// let galaPounds =
-// let pinkPounds =
+let fujiPounds = fujiTons.slice(0, fujiTons.length)
+let galaPounds = galaTons.slice(0, galaTons.length)
+let pinkPounds = pinkTons.slice(0, pinkTons.length)
+let fujiPoundsTotal = 0;
+let galaPoundsTotal = 0;
+let pinkPoundsTotal = 0;
 
+// for (let i = 0; i < fujiTons.length; i++){
+//     fujiPounds += fujiTons[i] * 2000
+// }
+// console.log(fujiPounds)
+// for (let i = 0; i < fujiTons.length; i++){
+//     fujiPounds += fujiTons[i]
+// }
+// fujiPounds * 2000;
+// console.log(fujiPounds)
 
+for (let i = 0; i < fujiTons.length; i++){
+    fujiPounds[i] = fujiTons[i] * 2000
+}
+console.log(fujiPounds)
 
+for (let i = 0; i < galaTons.length; i++){
+    galaPounds[i] = galaTons[i] * 2000
+}
+console.log(galaPounds)
 
+for (let i = 0; i < pinkTons.length; i++){
+    pinkPounds[i] = pinkTons[i] * 2000
+}
+console.log(pinkPounds)
+
+for (let i = 0; i < fujiPounds.length; i++){
+    fujiPoundsTotal += fujiPounds[i]
+}
+for (let i = 0; i < galaPounds.length; i++){
+    galaPoundsTotal += galaPounds[i]
+}
+for (let i = 0; i < pinkPounds.length; i++){
+    pinkPoundsTotal += pinkPounds[i]
+}
+    console.log("--------")
+    console.log(fujiPoundsTotal)
+    console.log(galaPoundsTotal)
+    console.log(pinkPoundsTotal)
 
 
 // PROBLEM 6
@@ -186,13 +273,18 @@ let days = 0
     Log each of the profits to the 
     console. 
 */
+// const fujiPrice = .89 
+// const galaPrice = .64
+// const pinkPrice = .55
 
 // CODE HERE
-
-// let fujiProfit =
-// let galaProfit =
-// let pinkProfit =
-
+console.log("--question 6----")
+let fujiProfit = (fujiPoundsTotal * fujiPrice)
+let galaProfit = (galaPoundsTotal * galaPrice)
+let pinkProfit = (pinkPoundsTotal * pinkPrice)
+console.log(fujiProfit)
+console.log(galaProfit)
+console.log(pinkProfit)
 
 
 
@@ -209,3 +301,6 @@ let days = 0
 */
 
 // CODE HERE
+console.log("---question 7----")
+let totalProfit = (fujiProfit + galaProfit + pinkProfit)
+console.log(totalProfit)

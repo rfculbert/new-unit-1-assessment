@@ -10,6 +10,9 @@
 */
 
 //CODE HERE
+console.log("--question 1--")
+let gitDefinition = "Git is a tool used in the tech industry to help teams of developers manage project. It can help keep track of what has been worked on and by whom. It allows people living in different areas to be able to work on the same project"
+console.log(gitDefinition)
 
 //////////////////PROBLEM 2////////////////////
 /*
@@ -18,7 +21,9 @@
 */
 
 //CODE HERE
-
+console.log("--question 2--")
+let gitHubDefinition = "GitHub is a website used to created repositories to allow multiple devs to work on 1 big project together. It can be used to share/store data that the devs have coded with one another."
+console.log(gitHubDefinition)
 //////////////////PROBLEM 3////////////////////
 /*
     Create a variable called 'gitInitDefinition'.  
@@ -26,7 +31,9 @@
 */
 
 //CODE HERE
-
+console.log("--question 3--")
+let gitInitDefinition = "git init (git initialize) is the first step in creating a repository for your github. It initializes the project you are either working on or about to start working on."
+console.log(gitInitDefinition)
 //////////////////PROBLEM 4////////////////////
 /*
     Create a variable called 'gitCloneDefinition'.  
@@ -34,7 +41,9 @@
 */
 
 //CODE HERE
-
+console.log("--question 4--")
+let gitCloneDefinition = "Creates a copy of your existing work"
+console.log(gitCloneDefinition)
 //////////////////PROBLEM 5////////////////////
 /*
     Create a variable called 'gitStatusDefinition'.  
@@ -42,7 +51,9 @@
 */
 
 //CODE HERE
-
+console.log("--question 5--")
+let gitStatusDefinition = "It allows you to see the status of the project you're currently working on. i.e.(what changes have been made since starting, where were the changes made)."
+console.log(gitStatusDefinition)
 //////////////////PROBLEM 6////////////////////
 /*
     Create a variable called 'gitAddDefinition'.  
@@ -53,7 +64,11 @@
 */
 
 //CODE HERE
-
+console.log("--question 6--")
+let gitAddDefinition = "Lets Git know you want to add any changes you have made to the file into your next commit."
+let gitAddCode = "git add ."
+console.log(gitAddDefinition)
+console.log(gitAddCode)
 //////////////////PROBLEM 7////////////////////
 /*
     Create a variable called 'gitCommitDefinition'.  
@@ -64,8 +79,11 @@
 */
 
 //CODE HERE
-
-
+console.log("--question 7--")
+let gitCommitDefinition = "It adds a flag or screenshot of all the lines of code curently written in the project "
+let gitCommitCode = "git commit -m 'initial commit'."
+console.log(gitCommitDefinition)
+console.log(gitCommitCode)
 //////////////////PROBLEM 8////////////////////
 /*
     Create a variable called 'gitPushDefinition'.  
@@ -73,3 +91,5 @@
 */
 
 //CODE HERE
+console.log("--question 8--")
+let gitPushDefinition = "git push lets the system know you want it to send the project youre working on from your personal computer to gitHub"
